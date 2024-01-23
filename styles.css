@@ -1,51 +1,57 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    height: 748px;
-    width: 748px;
+/* fixed sizing 
+-------------------------------------------------------------- */
+/* .container{
     display: grid;
-    background-color: #000;
-    grid-template-columns: 320px 198px 153px 50px;
-    grid-template-rows: 414px 130px 155px 22px;
-    gap: 9px;
-}
+    grid-template-columns: 100px auto;
+    grid-template-rows: 200px auto;
+} */
+/* -------------------------------------------------------------- */
 
-.item{
-    background-color: #f8f1ec;
-}
+/* auto sizing 
+-------------------------------------------------------------- */
+/* .container{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 200px 200px;
+} */
+/* -------------------------------------------------------------- */
 
-.red{
-    background-color: #e72f24;
-}
+/* fractional sizing 
+ -------------------------------------------------------------- */
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+} */
+/* -------------------------------------------------------------- */
 
-.white1{
-    grid-column: span 3;
-}
-.white2{
-    grid-row: span 2;
-}
-.white3{
-    grid-area: 2/2/4/4;
-}
 
-.blue{
-    background-color: #004592;
-    border-bottom: 10px solid #000;
-}
+/* MinMax sizing sizing 
+ -------------------------------------------------------------- */
+ /* .container{
+    display: grid;
+    grid-template-rows: 200px 400px;
+    grid-template-columns: 200px minmax(400px,800px);
+} */
+/* -------------------------------------------------------------- */
 
-.white4{
-    grid-row: span 2;
+/* Repeat sizing 
+ -------------------------------------------------------------- */
+ /* .container{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 100px);
+} */
+/* -------------------------------------------------------------- */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 100px);
 }
-.yellow{
-    background-color: #f9d01e;
-}
-.black{
-    background-color: #232629;
+/* -------------------------------------------------------------- */
+
+
+.grid-item{
+    background-color: orange;
+    border: 2px solid black;
 }
